@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>72</ID>
+      <Description>"Scripts"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <Address>00000000</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>71</ID>
+          <Description>"WarpOnUnpause"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"KINGDOM HEARTS FINAL MIX.exe"+2D0A66)
+alloc(secondInject, 1024, "KINGDOM HEARTS FINAL MIX.exe"+1A37EE)
+alloc(regVals, 256)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+"KINGDOM HEARTS FINAL MIX.exe"+1A37EE:
+jmp secondInject
+
+
+secondInject:
+mov ecx,["KINGDOM HEARTS FINAL MIX.exe"+232A588]
+jmp "KINGDOM HEARTS FINAL MIX.exe"+1A37F5
+
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+mov [regVals],rcx
+mov [regVals+8],rdx
+mov rcx,"KINGDOM HEARTS FINAL MIX.exe"+2378C70
+call "KINGDOM HEARTS FINAL MIX.exe"+1A37E0
+mov rcx,[regVals]
+mov rdx,[regVals+8]
+
+originalcode:
+mov eax,00000004
+
+exit:
+jmp returnhere
+
+"KINGDOM HEARTS FINAL MIX.exe"+2D0A66:
+jmp newmem
+returnhere:
+ 
+[DISABLE]
+dealloc(newmem)
+dealloc(secondInject)
+dealloc(regVals)
+
+"KINGDOM HEARTS FINAL MIX.exe"+1A37EE:
+mov ecx,[rcx+rdx*4+00000198]
+
+"KINGDOM HEARTS FINAL MIX.exe"+2D0A66:
+mov eax,00000004
+
+//code from here till the end of the code will be used to disable the cheat
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>73</ID>
+      <Description>"Room Info"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <Address>00000000</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"Warp ID"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+232A588</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>25</ID>
+          <Description>"World ID"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+233CADC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"RoomID"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+233CB44</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"Scene ID"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+233CB48</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>36</ID>
+          <Description>"ARD"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+232A540</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>37</ID>
+          <Description>"WDT"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>6</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+232A480</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>30</ID>
+          <Description>"RoomModelID"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+233CB40</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"RoomTextureID"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+233CB50</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>38</ID>
+          <Description>"Stage"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+232A4C0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"RoomWorldID"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+233CB4C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>39</ID>
+          <Description>"Room"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>4</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+232A500</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>65</ID>
+          <Description>"RoomModelTablePtr"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+232A590</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>29</ID>
+          <Description>"WarpTablePtr"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+232A580</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>63</ID>
+          <Description>"SceneTablePtr"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+232A430</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>57</ID>
+          <Description>"BINL Pointer"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>16</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23CC410</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>74</ID>
+      <Description>"Items"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <Address>00000000</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>14</ID>
+          <Description>"Stock Item P1"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Array of byte</VariableType>
+          <ByteLength>16</ByteLength>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5E6A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>17</ID>
+          <Description>"Stock Item P2"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Array of byte</VariableType>
+          <ByteLength>114</ByteLength>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5EF7</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>15</ID>
+          <Description>"Inventory Equipment"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Array of byte</VariableType>
+          <ByteLength>64</ByteLength>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5E7A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"Sora Items"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Array of byte</VariableType>
+          <ByteLength>16</ByteLength>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59F6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"Sora Equipment"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Array of byte</VariableType>
+          <ByteLength>8</ByteLength>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59ED</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>13</ID>
+          <Description>"Sora Weapon"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5A06</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>75</ID>
+      <Description>"Sora Stats"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <Address>00000000</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"Sora Level"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59D4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>0</ID>
+          <Description>"Sora EXP"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5A10</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"Magic Byte"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5A44</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"Sora Current HP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59D5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"Sora Max HP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59D6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"Sora Current MP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59D7</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"Sora Max MP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59D8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"Sora Strength"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59DA</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8</ID>
+          <Description>"Sora Defense"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59DB</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Sora Max AP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59D9</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10</ID>
+          <Description>"Sora Item Limit"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59F5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"Sora Accessory Limit"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59EC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"Sora Abilities"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Array of byte</VariableType>
+          <ByteLength>48</ByteLength>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5A14</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>62</ID>
+      <Description>"Group Abilities"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>4</ByteLength>
+      <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5F69</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>76</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>KINGDOM HEARTS FINAL MIX.exe+2378C70</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>Info about this table:
+</Comments>
+</CheatTable>
