@@ -119,7 +119,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>28</ID>
           <Description>"Warp ID"</Description>
-          <LastState Value="38" RealAddress="7FF7EED5A588"/>
+          <LastState Value="8" RealAddress="7FF7EED5A588"/>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+232A588</Address>
         </CheatEntry>
@@ -134,7 +134,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>20</ID>
           <Description>"RoomID"</Description>
-          <LastState Value="5" RealAddress="7FF7EED6CB44"/>
+          <LastState Value="1" RealAddress="7FF7EED6CB44"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+233CB44</Address>
@@ -142,7 +142,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>24</ID>
           <Description>"Scene ID"</Description>
-          <LastState Value="2" RealAddress="7FF7EED6CB48"/>
+          <LastState Value="14" RealAddress="7FF7EED6CB48"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+233CB48</Address>
@@ -174,7 +174,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>30</ID>
           <Description>"RoomModelID"</Description>
-          <LastState Value="3" RealAddress="7FF7EED6CB40"/>
+          <LastState Value="1" RealAddress="7FF7EED6CB40"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+233CB40</Address>
@@ -182,7 +182,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>31</ID>
           <Description>"RoomTextureID"</Description>
-          <LastState Value="3" RealAddress="7FF7EED6CB50"/>
+          <LastState Value="1" RealAddress="7FF7EED6CB50"/>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+233CB50</Address>
         </CheatEntry>
@@ -290,7 +290,7 @@ mov eax,00000004
       <Options moHideChildren="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
-      <Address>0</Address>
+      <Address>00000000</Address>
       <CheatEntries>
         <CheatEntry>
           <ID>15</ID>
@@ -369,7 +369,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>4</ID>
           <Description>"Sora Current MP"</Description>
-          <LastState Value="130" RealAddress="7FF7EF8159D7"/>
+          <LastState Value="129" RealAddress="7FF7EF8159D7"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+2DE59D7</Address>
@@ -439,24 +439,24 @@ mov eax,00000004
       <Options moHideChildren="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
-      <Address>0</Address>
+      <Address>00000000</Address>
       <CheatEntries>
         <CheatEntry>
           <ID>77</ID>
           <Description>"Sora Pointer"</Description>
-          <LastState Value="00007FF7EF7659F0" RealAddress="7FF7EEE1D050"/>
+          <LastState Value="00007FF7EF763920" RealAddress="7FF7EEE1D050"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+23ED050</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23ED050</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>78</ID>
           <Description>"Sora X"</Description>
-          <LastState Value="280" RealAddress="7FF7EF765A00"/>
+          <LastState Value="517.2144165" RealAddress="7FF7EF763930"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+23ED050</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23ED050</Address>
           <Offsets>
             <Offset>10</Offset>
           </Offsets>
@@ -464,10 +464,10 @@ mov eax,00000004
         <CheatEntry>
           <ID>79</ID>
           <Description>"Sora Y"</Description>
-          <LastState Value="-400" RealAddress="7FF7EF765A04"/>
+          <LastState Value="-300" RealAddress="7FF7EF763934"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+23ED050</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23ED050</Address>
           <Offsets>
             <Offset>14</Offset>
           </Offsets>
@@ -475,10 +475,10 @@ mov eax,00000004
         <CheatEntry>
           <ID>80</ID>
           <Description>"Sora Z"</Description>
-          <LastState Value="680" RealAddress="7FF7EF765A08"/>
+          <LastState Value="-2261.932373" RealAddress="7FF7EF763938"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+23ED050</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23ED050</Address>
           <Offsets>
             <Offset>18</Offset>
           </Offsets>
@@ -491,24 +491,24 @@ mov eax,00000004
       <Options moHideChildren="1"/>
       <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
-      <Address>0</Address>
+      <Address>00000000</Address>
       <CheatEntries>
         <CheatEntry>
           <ID>83</ID>
           <Description>"P1 Pointer"</Description>
-          <LastState Value="00007FF7EF765EA0" RealAddress="7FF7EEE1D058"/>
+          <LastState Value="00007FF7EF763DD0" RealAddress="7FF7EEE1D058"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+23ED058</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23ED058</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>84</ID>
           <Description>"P1 X"</Description>
-          <LastState Value="360" RealAddress="7FF7EF765EB0"/>
+          <LastState Value="630.776001" RealAddress="7FF7EF763DE0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+23ED058</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23ED058</Address>
           <Offsets>
             <Offset>10</Offset>
           </Offsets>
@@ -516,10 +516,10 @@ mov eax,00000004
         <CheatEntry>
           <ID>85</ID>
           <Description>"P1 Y"</Description>
-          <LastState Value="-400" RealAddress="7FF7EF765EB4"/>
+          <LastState Value="-300" RealAddress="7FF7EF763DE4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+23ED058</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23ED058</Address>
           <Offsets>
             <Offset>14</Offset>
           </Offsets>
@@ -527,10 +527,10 @@ mov eax,00000004
         <CheatEntry>
           <ID>86</ID>
           <Description>"P1 Z"</Description>
-          <LastState Value="587.0505981" RealAddress="7FF7EF765EB8"/>
+          <LastState Value="-2150.408203" RealAddress="7FF7EF763DE8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+23ED058</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+23ED058</Address>
           <Offsets>
             <Offset>18</Offset>
           </Offsets>
@@ -549,7 +549,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>88</ID>
           <Description>"P2 Pointer"</Description>
-          <LastState Value="00007FF7EF766350" RealAddress="7FF7EEE1D060"/>
+          <LastState Value="00007FF7EF764280" RealAddress="7FF7EEE1D060"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
@@ -558,7 +558,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>89</ID>
           <Description>"P2 X"</Description>
-          <LastState Value="371.0718689" RealAddress="7FF7EF766360"/>
+          <LastState Value="635.8625488" RealAddress="7FF7EF764290"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+23ED060</Address>
@@ -569,7 +569,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>90</ID>
           <Description>"P2 Y"</Description>
-          <LastState Value="-400.5" RealAddress="7FF7EF766364"/>
+          <LastState Value="-300" RealAddress="7FF7EF764294"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+23ED060</Address>
@@ -580,7 +580,7 @@ mov eax,00000004
         <CheatEntry>
           <ID>91</ID>
           <Description>"P2 Z"</Description>
-          <LastState Value="657.9342651" RealAddress="7FF7EF766368"/>
+          <LastState Value="-2337.330811" RealAddress="7FF7EF764298"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+23ED060</Address>
@@ -594,9 +594,9 @@ mov eax,00000004
       <ID>99</ID>
       <Description>"LockOn Actor"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="00000000"/>
+      <LastState Value="" Activated="1" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
-      <Address>0</Address>
+      <Address>00000000</Address>
       <CheatEntries>
         <CheatEntry>
           <ID>95</ID>
@@ -604,7 +604,7 @@ mov eax,00000004
           <LastState Value="0000000000000000" RealAddress="7FF7EEF644E0"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>8 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+25344E0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+25344E0</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>106</ID>
@@ -612,7 +612,7 @@ mov eax,00000004
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+25344E0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+25344E0</Address>
           <Offsets>
             <Offset>4</Offset>
           </Offsets>
@@ -623,7 +623,7 @@ mov eax,00000004
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+25344E0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+25344E0</Address>
           <Offsets>
             <Offset>6C</Offset>
           </Offsets>
@@ -634,7 +634,7 @@ mov eax,00000004
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+25344E0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+25344E0</Address>
           <Offsets>
             <Offset>130</Offset>
           </Offsets>
@@ -644,7 +644,7 @@ mov eax,00000004
           <Description>"LockOn ChestID"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>2 Bytes</VariableType>
-          <Address>7FF7EF9103B0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2EE03B0</Address>
           <Offsets>
             <Offset>[(LockOn ChestTable)]+80000048</Offset>
           </Offsets>
@@ -654,7 +654,7 @@ mov eax,00000004
           <Description>"LockOn Entity Pointer"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+2EE03B0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2EE03B0</Address>
           <Offsets>
             <Offset>[(LockOn Entity)]+80000000</Offset>
           </Offsets>
@@ -664,7 +664,7 @@ mov eax,00000004
           <Description>"LockOn Current Health"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+2EE03B0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2EE03B0</Address>
           <Offsets>
             <Offset>[(LockOn Entity)]-80000000+3C</Offset>
           </Offsets>
@@ -674,7 +674,7 @@ mov eax,00000004
           <Description>"LockOn Max Health"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+2EE03B0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2EE03B0</Address>
           <Offsets>
             <Offset>[(LockOn Entity)]-80000000+40</Offset>
           </Offsets>
@@ -684,7 +684,7 @@ mov eax,00000004
           <Description>"LockOn X"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+25344E0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+25344E0</Address>
           <Offsets>
             <Offset>10</Offset>
           </Offsets>
@@ -694,7 +694,7 @@ mov eax,00000004
           <Description>"LockOn Y"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+25344E0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+25344E0</Address>
           <Offsets>
             <Offset>14</Offset>
           </Offsets>
@@ -704,7 +704,7 @@ mov eax,00000004
           <Description>"LockOn Z"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
-          <Address>"KINGDOM HEARTS FINAL MIX.exe"+25344E0</Address>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+25344E0</Address>
           <Offsets>
             <Offset>18</Offset>
           </Offsets>
@@ -717,7 +717,7 @@ mov eax,00000004
       <LastState Value="0" RealAddress="7FF7EF789190"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>"KINGDOM HEARTS FINAL MIX.exe"+2D59190</Address>
+      <Address>KINGDOM HEARTS FINAL MIX.exe+2D59190</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>62</ID>
@@ -727,6 +727,13 @@ mov eax,00000004
       <VariableType>Array of byte</VariableType>
       <ByteLength>4</ByteLength>
       <Address>KINGDOM HEARTS FINAL MIX.exe+2DE5F69</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>109</ID>
+      <Description>"Munny"</Description>
+      <LastState Value="1003" RealAddress="7FF7EF82BDEC"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>KINGDOM HEARTS FINAL MIX.exe+2DFBDEC</Address>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
