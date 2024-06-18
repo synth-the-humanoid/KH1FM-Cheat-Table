@@ -5,7 +5,7 @@
       <ID>51</ID>
       <Description>"Scripts"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="00000000"/>
+      <LastState Value="" Activated="1" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
@@ -110,26 +110,64 @@ db 48 8B C8 E8 88 39 F3 FF
 //call "KINGDOM HEARTS FINAL MIX.exe"+1E1D00
 </AssemblerScript>
         </CheatEntry>
+        <CheatEntry>
+          <ID>90</ID>
+          <Description>"Force Isometric View"</Description>
+          <LastState Activated="1"/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"KINGDOM HEARTS FINAL MIX.exe"+291428) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+mov ["KINGDOM HEARTS FINAL MIX.exe"+299C488],0A
+
+originalcode:
+cmp dword ptr ["KINGDOM HEARTS FINAL MIX.exe"+299C488],02
+
+exit:
+jmp returnhere
+
+"KINGDOM HEARTS FINAL MIX.exe"+291428:
+jmp newmem
+nop 2
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"KINGDOM HEARTS FINAL MIX.exe"+291428:
+db 83 3D 59 B0 70 02 02
+//cmp dword ptr ["KINGDOM HEARTS FINAL MIX.exe"+299C488],02
+</AssemblerScript>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>20</ID>
       <Description>"Room Info"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="00000000"/>
+      <LastState Value="" Activated="1" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
           <ID>16</ID>
           <Description>"World ID"</Description>
-          <LastState Value="3" RealAddress="7FF6797D0DDC"/>
+          <LastState Value="8" RealAddress="7FF6797D0DDC"/>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+2340DDC</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>17</ID>
           <Description>"Room ID"</Description>
-          <LastState Value="10" RealAddress="7FF6797D0E44"/>
+          <LastState Value="0" RealAddress="7FF6797D0E44"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+2340E44</Address>
@@ -137,7 +175,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>19</ID>
           <Description>"Warp ID"</Description>
-          <LastState Value="51" RealAddress="7FF6797BE888"/>
+          <LastState Value="67" RealAddress="7FF6797BE888"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+232E888</Address>
@@ -157,7 +195,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>18</ID>
           <Description>"Scene ID"</Description>
-          <LastState Value="0" RealAddress="7FF6797D0E48"/>
+          <LastState Value="12" Activated="1" RealAddress="7FF6797D0E48"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+2340E48</Address>
@@ -318,7 +356,7 @@ db 48 8B C8 E8 88 39 F3 FF
       <ID>72</ID>
       <Description>"Sora Entity"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="7FF67A1C80D0"/>
+      <LastState Value="" RealAddress="7FF67A1C7C20"/>
       <ShowAsHex>1</ShowAsHex>
       <ShowAsSigned>0</ShowAsSigned>
       <GroupHeader>1</GroupHeader>
@@ -330,7 +368,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>73</ID>
           <Description>"Sora Pointer"</Description>
-          <LastState Value="00007FF67A1C80D0" RealAddress="7FF67A1C7C00"/>
+          <LastState Value="00007FF67A1C7C20" RealAddress="7FF67A1C7C00"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
@@ -339,7 +377,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>74</ID>
           <Description>"Sora X"</Description>
-          <LastState Value="25.09054375" RealAddress="7FF67A1C80E0"/>
+          <LastState Value="1373.372559" RealAddress="7FF67A1C7C30"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>+10</Address>
@@ -347,7 +385,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>75</ID>
           <Description>"Sora Y"</Description>
-          <LastState Value="80" RealAddress="7FF67A1C80E4"/>
+          <LastState Value="-78.65913391" RealAddress="7FF67A1C7C34"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>+14</Address>
@@ -355,7 +393,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>76</ID>
           <Description>"Sora Z"</Description>
-          <LastState Value="-93.52484131" RealAddress="7FF67A1C80E8"/>
+          <LastState Value="202.6054382" RealAddress="7FF67A1C7C38"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>+18</Address>
@@ -363,7 +401,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>77</ID>
           <Description>"Sora StatPage Offset"</Description>
-          <LastState Value="841ED590" RealAddress="7FF67A1C813C"/>
+          <LastState Value="841ED590" RealAddress="7FF67A1C7C8C"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -434,7 +472,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>85</ID>
           <Description>"Sora Model Offset"</Description>
-          <LastState Value="83882150" RealAddress="7FF67A1C822C"/>
+          <LastState Value="83881F50" RealAddress="7FF67A1C7D7C"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -444,7 +482,7 @@ db 48 8B C8 E8 88 39 F3 FF
           <ID>86</ID>
           <Description>"Sora Model"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="" RealAddress="7FF679882150"/>
+          <LastState Value="" RealAddress="7FF679881F50"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <GroupHeader>1</GroupHeader>
@@ -456,7 +494,7 @@ db 48 8B C8 E8 88 39 F3 FF
             <CheatEntry>
               <ID>87</ID>
               <Description>"Sora Model Pointer"</Description>
-              <LastState Value="00007FF6781BB8C0" RealAddress="7FF679882320"/>
+              <LastState Value="00007FF6781BB8C0" RealAddress="7FF679882120"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>8 Bytes</VariableType>
@@ -468,7 +506,7 @@ db 48 8B C8 E8 88 39 F3 FF
             <CheatEntry>
               <ID>88</ID>
               <Description>"Sora Pointer2"</Description>
-              <LastState Value="00007FF6782624B0" RealAddress="7FF679882158"/>
+              <LastState Value="00007FF678262490" RealAddress="7FF679881F58"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>8 Bytes</VariableType>
@@ -628,7 +666,7 @@ db 48 8B C8 E8 88 39 F3 FF
       <ID>67</ID>
       <Description>"Commands"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" Activated="1" RealAddress="7FF6779B9670"/>
+      <LastState Value="" RealAddress="7FF6779B9600"/>
       <ShowAsSigned>0</ShowAsSigned>
       <GroupHeader>1</GroupHeader>
       <Address>KINGDOM HEARTS FINAL MIX.exe+2D543D0</Address>
@@ -640,7 +678,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>63</ID>
           <Description>"Command Menu Option"</Description>
-          <LastState Value="4" RealAddress="7FF6779B967C"/>
+          <LastState Value="0" RealAddress="7FF6779B960C"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+0C</Address>
@@ -648,7 +686,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>66</ID>
           <Description>"Magic Menu Option"</Description>
-          <LastState Value="0" RealAddress="7FF6779B96B4"/>
+          <LastState Value="0" RealAddress="7FF6779B9644"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+44</Address>
@@ -656,7 +694,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>68</ID>
           <Description>"Item Menu Option"</Description>
-          <LastState Value="0" RealAddress="7FF6779B96EC"/>
+          <LastState Value="0" RealAddress="7FF6779B967C"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+7C</Address>
@@ -666,7 +704,7 @@ db 48 8B C8 E8 88 39 F3 FF
     <CheatEntry>
       <ID>15</ID>
       <Description>"Items"</Description>
-      <LastState Value="93 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 105 99 99 101 99 99 100 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 100 100 100 100 100 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99" RealAddress="7FF67A27A17A"/>
+      <LastState Value="94 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 105 99 99 101 99 99 100 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 100 100 100 100 100 100 100 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99" RealAddress="7FF67A27A17A"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>Array of byte</VariableType>
       <ByteLength>255</ByteLength>
@@ -684,7 +722,7 @@ db 48 8B C8 E8 88 39 F3 FF
     <CheatEntry>
       <ID>89</ID>
       <Description>"CameraStyle"</Description>
-      <LastState Value="9" RealAddress="7FF679E2C488"/>
+      <LastState Value="10" RealAddress="7FF679E2C488"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
       <Address>KINGDOM HEARTS FINAL MIX.exe+299C488</Address>
