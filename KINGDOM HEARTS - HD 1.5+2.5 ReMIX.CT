@@ -5,7 +5,7 @@
       <ID>101</ID>
       <Description>"ExtraInfo"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" Activated="1" RealAddress="7FF66A450040"/>
+      <LastState Value="" RealAddress="7FF7A0280040"/>
       <ShowAsSigned>0</ShowAsSigned>
       <GroupHeader>1</GroupHeader>
       <Address>extraInfoPtr</Address>
@@ -174,7 +174,7 @@
           <ID>124</ID>
           <Description>"EntityInfo"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="" Activated="1" RealAddress="00000000"/>
+          <LastState Value="" RealAddress="00000000"/>
           <ShowAsSigned>0</ShowAsSigned>
           <GroupHeader>1</GroupHeader>
           <Address>+0</Address>
@@ -247,10 +247,24 @@
                 </CheatEntry>
                 <CheatEntry>
                   <ID>130</ID>
-                  <Description>"Entity Rot"</Description>
+                  <Description>"Entity Rot X"</Description>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Float</VariableType>
                   <Address>+20</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>161</ID>
+                  <Description>"Entity Rot Y"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>+24</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>160</ID>
+                  <Description>"Entity Rot Z"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>+28</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>131</ID>
@@ -261,12 +275,12 @@
                   <Address>+6C</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>139</ID>
-                  <Description>"Entity Model Offset"</Description>
+                  <ID>157</ID>
+                  <Description>"Entity Behavior Offset"</Description>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
-                  <Address>+15C</Address>
+                  <Address>+130</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>152</ID>
@@ -275,6 +289,14 @@
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+140</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>139</ID>
+                  <Description>"Entity Model Offset"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+15C</Address>
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
@@ -361,7 +383,7 @@
               <ID>148</ID>
               <Description>"Entity IconInfo"</Description>
               <Options moHideChildren="1"/>
-              <LastState Value="" Activated="1" RealAddress="00000000"/>
+              <LastState Value="" RealAddress="00000000"/>
               <ShowAsSigned>0</ShowAsSigned>
               <GroupHeader>1</GroupHeader>
               <Address>+20</Address>
@@ -397,7 +419,7 @@
               <ID>151</ID>
               <Description>"Entity Icon"</Description>
               <Options moHideChildren="1"/>
-              <LastState Value="" Activated="1" RealAddress="00000000"/>
+              <LastState Value="" RealAddress="00000000"/>
               <ShowAsSigned>0</ShowAsSigned>
               <GroupHeader>1</GroupHeader>
               <Address>+28</Address>
@@ -424,6 +446,108 @@
                   <Address>+70</Address>
                   <Offsets>
                     <Offset>40</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>159</ID>
+              <Description>"Entity BehaviorInfo"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+30</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>158</ID>
+                  <Description>"Movability"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>+18</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>164</ID>
+                  <Description>"InteractionFlag"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>+44</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>165</ID>
+                  <Description>"InteractionID"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+5C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>166</ID>
+                  <Description>"MDLS Offset"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+60</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>170</ID>
+                  <Description>"MSET Offset"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+64</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>163</ID>
+                  <Description>"Name"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>16</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+68</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>167</ID>
+              <Description>"Entity ModelInfo"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" RealAddress="00000038"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+38</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>168</ID>
+                  <Description>"MDLS"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>32</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+0</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>169</ID>
+                  <Description>"MSET"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>32</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+8</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
                   </Offsets>
                 </CheatEntry>
               </CheatEntries>
@@ -474,9 +598,148 @@
       <ID>51</ID>
       <Description>"Scripts"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" Activated="1" RealAddress="00000000"/>
+      <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
+        <CheatEntry>
+          <ID>171</ID>
+          <Description>"MoglieMode"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"KINGDOM HEARTS FINAL MIX.exe"+28645F)
+label(newcode)
+label(copystring)
+label(copyloop)
+label(copyend)
+label(soracheck)
+label(soraloop)
+label(soraendf)
+label(soraendt)
+label(soraend)
+label(convertpointer)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+db 78 61 5F 65 78 5F 31 32 30 30 2E 6D 64 6C 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 78 61 5F 65 78 5F 31 32 30 30 2E 6D 73 65 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 53 4F 52 41 00 00 00 00
+
+copystring:
+push rax
+push rbx
+push rcx
+push rdx
+copyloop:
+cmp rcx,0
+je copyend
+mov dl,[rax]
+mov [rbx],dl
+inc rax
+inc rbx
+dec rcx
+jmp copyloop
+copyend:
+pop rdx
+pop rcx
+pop rbx
+pop rax
+ret
+
+soracheck:
+push rbx
+push rcx
+push rdx
+xor rcx,rcx
+xor rbx,rbx
+add rax,12
+lea rdx,[newmem+40]
+soraloop:
+mov bl,[rdx+rcx]
+cmp bl,[rax+rcx]
+jne soraendf
+cmp bl,0
+je soraendt
+inc rcx
+jmp soraloop
+soraendf:
+mov rax,0
+jmp soraend
+soraendt:
+mov rax,1
+soraend:
+pop rdx
+pop rcx
+pop rbx
+ret
+
+convertpointer:
+push rcx
+push rdx
+xor rcx,rcx
+mov ecx,[rax]
+call "KINGDOM HEARTS FINAL MIX.exe"+38AD70
+pop rdx
+pop rcx
+ret
+
+
+newcode:
+mov [rbx+E],eax
+push rax
+mov rax,rbx
+call soracheck
+cmp rax,1
+pop rax
+jne originalcode
+push rax
+mov rax,rbx
+push rbx
+push rcx
+push rax
+add rax,A
+call convertpointer
+mov rbx,rax
+lea rax,[newmem]
+mov rcx,20
+call copystring
+pop rax
+add rax,E
+call convertpointer
+mov rbx,rax
+add rbx,20
+lea rax,[newmem+20]
+call copystring
+pop rcx
+pop rbx
+pop rax
+
+
+
+
+originalcode:
+call "KINGDOM HEARTS FINAL MIX.exe"+38AD40
+
+exit:
+jmp returnhere
+
+"KINGDOM HEARTS FINAL MIX.exe"+285F13:
+jmp newcode
+returnhere:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"KINGDOM HEARTS FINAL MIX.exe"+285F13:
+db E8 28 4E 10 00
+//call "KINGDOM HEARTS FINAL MIX.exe"+38AD40
+</AssemblerScript>
+        </CheatEntry>
         <CheatEntry>
           <ID>37</ID>
           <Description>"WarpOnUnpause"</Description>
@@ -532,7 +795,7 @@ db E8 F6 FB FC FF
         <CheatEntry>
           <ID>98</ID>
           <Description>"WarpToRoomOnUnpause"</Description>
-          <LastState Activated="1"/>
+          <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 //code from here to '[DISABLE]' will be used to enable the cheat
@@ -595,20 +858,20 @@ db E8 F6 FB FC FF
         <CheatEntry>
           <ID>99</ID>
           <Description>"EnableExtraInfo"</Description>
-          <LastState Activated="1"/>
+          <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 //code from here to '[DISABLE]' will be used to enable the cheat
 alloc(preserve,64)
 alloc(extraInfoPtr,24)
 alloc(warpinfo,4)
-alloc(entityinfo, 48)
+alloc(entityinfo, 72)
 alloc(sceneinfo,16)
 alloc(newmem,2048,"KINGDOM HEARTS FINAL MIX.exe"+1A0111) 
 label(returnhere)
 label(originalcode)
 label(exit)
-label(restoration)
+label(posticon)
 label(skipicon)
 registerSymbol(extraInfoPtr)
 
@@ -681,12 +944,29 @@ je skipicon
 mov ecx,[rax+8]
 call "KINGDOM HEARTS FINAL MIX.exe"+38AD70
 mov [rbx+28],rax
-jmp restoration
+jmp posticon
 skipicon:
 xor rax,rax
 mov [rbx+28],rax
 
-restoration:
+posticon:
+xor rcx,rcx
+mov rbx,[extraInfoPtr+8]
+mov rdx,[rbx+8]
+mov ecx,[rdx+130]
+call "KINGDOM HEARTS FINAL MIX.exe"+38AD70
+mov [rbx+30],rax
+xor rcx,rcx
+xor rdx,rdx
+mov ecx,[rax+60]
+mov edx,[rax+64]
+push rdx
+call "KINGDOM HEARTS FINAL MIX.exe"+38AD70
+mov [rbx+38],rax
+pop rcx
+call "KINGDOM HEARTS FINAL MIX.exe"+38AD70
+mov [rbx+40],rax
+
 mov rax,[preserve]
 mov rbx,[preserve+8]
 mov rcx,[preserve+10]
@@ -726,7 +1006,7 @@ db E8 3A F9 FF FF
         <CheatEntry>
           <ID>90</ID>
           <Description>"Force Isometric View"</Description>
-          <LastState Activated="1"/>
+          <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 //code from here to '[DISABLE]' will be used to enable the cheat
@@ -856,18 +1136,20 @@ db 48 8B C8 E8 88 39 F3 FF
       <ID>20</ID>
       <Description>"Room Info"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" Activated="1" RealAddress="00000000"/>
+      <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
           <ID>16</ID>
           <Description>"World ID"</Description>
+          <LastState Value="0" RealAddress="7FF7A25F0DDC"/>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+2340DDC</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>95</ID>
           <Description>"Stage ID"</Description>
+          <LastState Value="0" RealAddress="7FF7A25F0E40"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+2340E40</Address>
@@ -875,6 +1157,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>17</ID>
           <Description>"Room ID"</Description>
+          <LastState Value="0" RealAddress="7FF7A25F0E44"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+2340E44</Address>
@@ -882,13 +1165,23 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>19</ID>
           <Description>"Warp ID"</Description>
+          <LastState Value="0" RealAddress="7FF7A25DE888"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+232E888</Address>
         </CheatEntry>
         <CheatEntry>
+          <ID>18</ID>
+          <Description>"Scene ID"</Description>
+          <LastState Value="0" RealAddress="7FF7A25F0E48"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>KINGDOM HEARTS FINAL MIX.exe+2340E48</Address>
+        </CheatEntry>
+        <CheatEntry>
           <ID>22</ID>
           <Description>"ARD"</Description>
+          <LastState RealAddress="7FF7A25DE840"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>8</Length>
@@ -898,15 +1191,9 @@ db 48 8B C8 E8 88 39 F3 FF
           <Address>KINGDOM HEARTS FINAL MIX.exe+232E840</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>18</ID>
-          <Description>"Scene ID"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>KINGDOM HEARTS FINAL MIX.exe+2340E48</Address>
-        </CheatEntry>
-        <CheatEntry>
           <ID>92</ID>
           <Description>"WarpTableBase"</Description>
+          <LastState Value="0000000000000000" RealAddress="7FF7A25DE880"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
@@ -915,6 +1202,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>96</ID>
           <Description>"StageTableBase"</Description>
+          <LastState Value="0000000000000000" RealAddress="7FF7A25DE890"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
@@ -923,6 +1211,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>93</ID>
           <Description>"SceneTableBase"</Description>
+          <LastState Value="00007FF7A309BCE0" RealAddress="7FF7A25DE730"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
@@ -931,6 +1220,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>97</ID>
           <Description>"World"</Description>
+          <LastState RealAddress="7FF7A0693CC4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>2</Length>
@@ -948,7 +1238,7 @@ db 48 8B C8 E8 88 39 F3 FF
       <ID>27</ID>
       <Description>"LockOn Entity"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" Activated="1" RealAddress="00000000"/>
+      <LastState Value="" RealAddress="00000000"/>
       <ShowAsHex>1</ShowAsHex>
       <ShowAsSigned>0</ShowAsSigned>
       <GroupHeader>1</GroupHeader>
@@ -960,6 +1250,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>21</ID>
           <Description>"LockOn Pointer"</Description>
+          <LastState Value="0000000000000000" RealAddress="7FF7A27E87F0"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>8 Bytes</VariableType>
           <Address>KINGDOM HEARTS FINAL MIX.exe+25387F0</Address>
@@ -1116,6 +1407,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>73</ID>
           <Description>"Sora Pointer"</Description>
+          <LastState Value="0000000000000000" RealAddress="7FF7A2FE7C00"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
@@ -1261,7 +1553,7 @@ db 48 8B C8 E8 88 39 F3 FF
       <ID>1</ID>
       <Description>"Sora Stats"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="00000000"/>
+      <LastState Value="" RealAddress="7FF7A3099CE0"/>
       <ShowAsSigned>0</ShowAsSigned>
       <GroupHeader>1</GroupHeader>
       <Address>KINGDOM HEARTS FINAL MIX.exe+2869520</Address>
@@ -1272,6 +1564,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>2</ID>
           <Description>"Sora Level"</Description>
+          <LastState Value="1" RealAddress="7FF7A3099CE4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+4</Address>
@@ -1279,6 +1572,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>3</ID>
           <Description>"Sora Current Health"</Description>
+          <LastState Value="18" RealAddress="7FF7A3099CE5"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+5</Address>
@@ -1286,6 +1580,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>4</ID>
           <Description>"Sora Max Health"</Description>
+          <LastState Value="18" RealAddress="7FF7A3099CE6"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+6</Address>
@@ -1293,6 +1588,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>5</ID>
           <Description>"Sora Current MP"</Description>
+          <LastState Value="3" RealAddress="7FF7A3099CE7"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+7</Address>
@@ -1300,6 +1596,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>6</ID>
           <Description>"Sora Max MP"</Description>
+          <LastState Value="3" RealAddress="7FF7A3099CE8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+8</Address>
@@ -1307,6 +1604,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>7</ID>
           <Description>"Sora Max AP"</Description>
+          <LastState Value="3" RealAddress="7FF7A3099CE9"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+9</Address>
@@ -1314,6 +1612,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>8</ID>
           <Description>"Sora Strength"</Description>
+          <LastState Value="4" RealAddress="7FF7A3099CEA"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+A</Address>
@@ -1321,6 +1620,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>9</ID>
           <Description>"Sora Defense"</Description>
+          <LastState Value="3" RealAddress="7FF7A3099CEB"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+B</Address>
@@ -1328,6 +1628,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>10</ID>
           <Description>"Sora Equipment Limit"</Description>
+          <LastState Value="2" RealAddress="7FF7A3099CFC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+1C</Address>
@@ -1335,6 +1636,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>11</ID>
           <Description>"Sora Equipment "</Description>
+          <LastState Value="0 0 0 0 0 0 0 0" RealAddress="7FF7A3099CFD"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Array of byte</VariableType>
           <ByteLength>8</ByteLength>
@@ -1343,6 +1645,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>12</ID>
           <Description>"Sora Item Limit"</Description>
+          <LastState Value="3" RealAddress="7FF7A3099D05"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+25</Address>
@@ -1350,6 +1653,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>13</ID>
           <Description>"Sora Items"</Description>
+          <LastState Value="0 0 0 0 0 0 0 0" RealAddress="7FF7A3099D06"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Array of byte</VariableType>
           <ByteLength>8</ByteLength>
@@ -1358,6 +1662,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>70</ID>
           <Description>"Sora Weapon"</Description>
+          <LastState Value="81" RealAddress="7FF7A3099D16"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>+36</Address>
@@ -1365,6 +1670,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>0</ID>
           <Description>"Sora EXP"</Description>
+          <LastState Value="0" RealAddress="7FF7A3099D20"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+40</Address>
@@ -1372,6 +1678,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>14</ID>
           <Description>"Sora Abilities"</Description>
+          <LastState Value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" RealAddress="7FF7A3099D24"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Array of byte</VariableType>
           <ByteLength>48</ByteLength>
@@ -1380,6 +1687,7 @@ db 48 8B C8 E8 88 39 F3 FF
         <CheatEntry>
           <ID>65</ID>
           <Description>"Magic Byte"</Description>
+          <LastState Value="00" RealAddress="7FF7A3099D54"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
@@ -1426,6 +1734,7 @@ db 48 8B C8 E8 88 39 F3 FF
     <CheatEntry>
       <ID>15</ID>
       <Description>"Items"</Description>
+      <LastState Value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" RealAddress="7FF7A309A17A"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>Array of byte</VariableType>
       <ByteLength>255</ByteLength>
@@ -1434,6 +1743,7 @@ db 48 8B C8 E8 88 39 F3 FF
     <CheatEntry>
       <ID>38</ID>
       <Description>"Group Abilities"</Description>
+      <LastState Value="0 0 0 0" RealAddress="7FF7A309A279"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>Array of byte</VariableType>
       <ByteLength>4</ByteLength>
@@ -1442,6 +1752,7 @@ db 48 8B C8 E8 88 39 F3 FF
     <CheatEntry>
       <ID>89</ID>
       <Description>"CameraStyle"</Description>
+      <LastState Value="0" RealAddress="7FF7A2C4C488"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
       <Address>KINGDOM HEARTS FINAL MIX.exe+299C488</Address>
@@ -3161,6 +3472,41 @@ db 48 8B C8 E8 88 39 F3 FF
         <Element Offset="516" Vartype="4 Bytes" Bytesize="4" OffsetHex="00000204" DisplayMethod="unsigned integer"/>
         <Element Offset="520" Vartype="Byte" Bytesize="1" RLECount="4" OffsetHex="00000208" DisplayMethod="unsigned integer"/>
         <Element Offset="524" Vartype="4 Bytes" Bytesize="4" RLECount="2" OffsetHex="0000020C" DisplayMethod="unsigned integer"/>
+      </Elements>
+    </Structure>
+    <Structure Name="unnamed structure" AutoFill="0" AutoCreate="1" DefaultHex="0" AutoDestroy="0" DoNotSaveLocal="0" RLECompression="1" AutoCreateStructsize="4096">
+      <Elements>
+        <Element Offset="0" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="00000000" DisplayMethod="hexadecimal"/>
+        <Element Offset="12" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="0000000C" DisplayMethod="unsigned integer"/>
+        <Element Offset="24" Vartype="Float" Bytesize="4" OffsetHex="00000018" DisplayMethod="unsigned integer"/>
+        <Element Offset="28" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="0000001C" DisplayMethod="unsigned integer"/>
+        <Element Offset="40" Vartype="8 Bytes" Bytesize="8" OffsetHex="00000028" DisplayMethod="hexadecimal"/>
+        <Element Offset="48" Vartype="Float" Bytesize="4" RLECount="2" OffsetHex="00000030" DisplayMethod="unsigned integer"/>
+        <Element Offset="56" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="00000038" DisplayMethod="unsigned integer"/>
+        <Element Offset="68" Vartype="4 Bytes" Bytesize="4" OffsetHex="00000044" DisplayMethod="hexadecimal"/>
+        <Element Offset="72" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="00000048" DisplayMethod="unsigned integer"/>
+        <Element Offset="84" Vartype="4 Bytes" Bytesize="4" RLECount="5" OffsetHex="00000054" DisplayMethod="hexadecimal"/>
+        <Element Offset="104" Vartype="String" Bytesize="5" OffsetHex="00000068" DisplayMethod="unsigned integer"/>
+        <Element Offset="109" Vartype="Byte" Bytesize="1" RLECount="3" OffsetHex="0000006D" DisplayMethod="unsigned integer"/>
+        <Element Offset="112" Vartype="4 Bytes" Bytesize="4" RLECount="2" OffsetHex="00000070" DisplayMethod="unsigned integer"/>
+      </Elements>
+    </Structure>
+    <Structure Name="unnamed structure" AutoFill="0" AutoCreate="1" DefaultHex="0" AutoDestroy="0" DoNotSaveLocal="0" RLECompression="1" AutoCreateStructsize="4096">
+      <Elements>
+        <Element Offset="0" Vartype="4 Bytes" Bytesize="4" OffsetHex="00000000" DisplayMethod="hexadecimal"/>
+        <Element Offset="4" Vartype="4 Bytes" Bytesize="4" OffsetHex="00000004" DisplayMethod="unsigned integer"/>
+        <Element Offset="8" Vartype="4 Bytes" Bytesize="4" OffsetHex="00000008" DisplayMethod="hexadecimal"/>
+        <Element Offset="12" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="0000000C" DisplayMethod="unsigned integer"/>
+        <Element Offset="24" Vartype="Float" Bytesize="4" OffsetHex="00000018" DisplayMethod="unsigned integer"/>
+        <Element Offset="28" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="0000001C" DisplayMethod="unsigned integer"/>
+        <Element Offset="40" Vartype="Double" Bytesize="8" OffsetHex="00000028" DisplayMethod="unsigned integer"/>
+        <Element Offset="48" Vartype="Float" Bytesize="4" RLECount="2" OffsetHex="00000030" DisplayMethod="unsigned integer"/>
+        <Element Offset="56" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="00000038" DisplayMethod="unsigned integer"/>
+        <Element Offset="68" Vartype="Float" Bytesize="4" OffsetHex="00000044" DisplayMethod="unsigned integer"/>
+        <Element Offset="72" Vartype="4 Bytes" Bytesize="4" RLECount="3" OffsetHex="00000048" DisplayMethod="unsigned integer"/>
+        <Element Offset="84" Vartype="4 Bytes" Bytesize="4" RLECount="5" OffsetHex="00000054" DisplayMethod="hexadecimal"/>
+        <Element Offset="104" Vartype="String" Bytesize="8" OffsetHex="00000068" DisplayMethod="unsigned integer"/>
+        <Element Offset="112" Vartype="4 Bytes" Bytesize="4" RLECount="2" OffsetHex="00000070" DisplayMethod="unsigned integer"/>
       </Elements>
     </Structure>
   </Structures>
